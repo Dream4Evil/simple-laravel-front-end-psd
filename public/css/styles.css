@@ -1,0 +1,151 @@
+body {
+  font-family: "Montserrat";
+}
+
+a:link {
+  color: #ffffff;
+}
+
+.container-bg {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.container-sm {
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+.nav {
+  padding-top: 25px;
+}
+
+.nav__links-container, .nav__logo-container {
+  display: inline-block;
+  width: 49.5%;
+}
+
+.range__text-container {
+  display: inline-block;
+  width: 59.5%;
+}
+
+.range__image-container {
+  display: inline-block;
+  width: 39.5%;
+}
+
+.nav__links {
+  display: inline-block;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.nav__links li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  padding: 14px 16px;
+  color: #ffffff;
+}
+
+.welcome {
+  background-image: url(../../public/image/welcome.jpg);
+  background-size: cover;
+  min-height: 105vh;
+  color: #ffffff;
+}
+
+.welcome__text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome__title {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.welcome__caption {
+  font-size: 1.6em;
+}
+
+.contact {
+  background-color: #001560;
+  color: #ffffff;
+}
+
+.contact__elements {
+  display: flex;
+  align-items: center;
+}
+
+.contact__el {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 60px;
+}
+
+.el__img {
+  padding-right: 5px;
+}
+
+.about {
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.about__title {
+  padding-bottom: 15px;
+  color: #282828;
+}
+
+.about__caption {
+  color: #707070;
+}
+
+.services__container {
+  display: inline-block;
+  padding-right: 4%;
+  width: 20%;
+}
+
+.services__icon {
+  padding-top: 75px;
+  padding-bottom: 50px;
+}
+
+.range {
+  padding-top: 280px;
+  padding-bottom: 280px;
+}
+
+.range__text-container {
+/*
+  display: flex;
+  align-items: center;
+    flex-direction: column;
+    justify-content: center;
+*/
+}
+
+.range__title {
+  padding-bottom: 80px;
+}
+
+.footer {
+  background-color: #001560;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.footer__text {
+  float: right;
+  color: #6b79ab;
+}
