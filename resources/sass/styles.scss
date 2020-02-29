@@ -1,30 +1,5 @@
-$nav-padding-top: 25px;
-
-$contact-footer-padding: 15px;
-$contact-footer-bg-color: #001560;
-$el__img--padding-right: 5px;
-
-$text-color-main: #ffffff;
-
-$about__title--color: #282828;
-$about__caption--color: #707070;
-$about--padding-top: 150px;
-$about--padding-bottom: 100px;
-$about__title--padding-bot: 15px;
-
-$services__icon--padding-top: 75px;
-$services__icon--padding-bot: 50px;
-
-$range--padding-top-bot: 280px;
-$range__title--padding-bot: 80px;
-//$range__image-container--padding-left: 0;
-
-$h1: 4em;
-$h2: 1.6em;
-
-body{
-    font-family: 'Montserrat';
-}
+@import "fonts";
+@import "variables";
 
 a:link{
     color: $text-color-main;
@@ -138,7 +113,7 @@ a:link{
 
 
 
-.services__container{
+.services__containers{
     display: inline-block;
     padding-right: 4%;
     width: 20%;

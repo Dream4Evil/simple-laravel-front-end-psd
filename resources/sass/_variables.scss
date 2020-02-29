@@ -1,19 +1,27 @@
-// Body
-$body-bg: #f8fafc;
+//------------NAV------------
 
-// Typography
-$font-family-sans-serif: 'Nunito', sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$nav-padding-top: 25px;
 
-// Colors
-$blue: #3490dc;
-$indigo: #6574cd;
-$purple: #9561e2;
-$pink: #f66d9b;
-$red: #e3342f;
-$orange: #f6993f;
-$yellow: #ffed4a;
-$green: #38c172;
-$teal: #4dc0b5;
-$cyan: #6cb2eb;
+//------------CONTACT------------
+
+$contact-footer-padding: 15px;
+$contact-footer-bg-color: #001560;
+$el__img--padding-right: 5px;
+
+//------------ABOUT------------
+
+$about__title--color: #282828;
+$about__caption--color: #707070;
+$about--padding-top: 150px;
+$about--padding-bottom: 100px;
+$about__title--padding-bot: 15px;
+
+//------------SERVICES------------
+
+$services__icon--padding-top: 75px;
+$services__icon--padding-bot: 50px;
+
+//------------RANGE------------
+
+$range--padding-top-bot: 280px;
+$range__title--padding-bot: 80px;
