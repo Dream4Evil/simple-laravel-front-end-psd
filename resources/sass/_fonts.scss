@@ -1,6 +1,21 @@
-body{ font-family: 'Montserrat'; }
+body{ 
+    font-family: 'Montserrat'; 
+}
+
+p{
+    line-height: 2em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+h2{ 
+    font-size: 2em;
+} 
+
+$welcome_p_font_size: 1.5em;
 
 $text-color-main: #ffffff;
 
 $h1: 4em;
-$h2: 1.6em;

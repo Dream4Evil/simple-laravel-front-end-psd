@@ -1,6 +1,11 @@
 @import "fonts";
 @import "variables";
 
+img {
+    max-width:100%;
+    height:auto;
+}
+
 a:link{
     color: $text-color-main;
 }
@@ -8,6 +13,7 @@ a:link{
 .container-bg{
   padding-left: 7%;
   padding-right: 7%;
+  height: 100%;
 }
 
 .container-sm{
@@ -15,23 +21,31 @@ a:link{
   padding-right: 14%;
 }
 
-.nav{
-    padding-top: $nav-padding-top;
-}
-
-.nav__links-container, .nav__logo-container{
-    display: inline-block;
-    width: 49.5%;
-}
-
-.range__text-container{
-    display: inline-block;
+.nav__links-container, .range__text-container{
     width: 59.5%;
 }
 
-.range__image-container{
-    display: inline-block;
+.nav__logo-container, .welcome__text, .range__image-container{
     width: 39.5%;
+}
+
+
+//------------NAV------------
+
+.nav{
+    display: flex;
+    min-height: 50px;
+//    height: 20vh;
+    padding-top: $nav-padding-top;
+}
+
+.nav__logo-container{
+}
+
+.nav__links-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
 }
 
 .nav__links{
@@ -50,15 +64,21 @@ a:link{
     color: $text-color-main;
 }
 
+
+
+//------------WELCOME------------
+
 .welcome{
-    background-image: url(../../public/image/welcome.jpg);
+    background-image: url(../../public/image/welcome2.jpg);
     background-size: cover;
-    min-height: 105vh;
+    background-position: top center;
+    min-height: 107vh;
     color: $text-color-main;
 }
 
 .welcome__text{
-    width: 50%;
+//    width: 50%;
+    height: 87vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -70,8 +90,12 @@ a:link{
 }
 
 .welcome__caption{
-    font-size: $h2;
+    font-size: $welcome_p_font_size;
 }
+
+
+
+//------------CONTACT------------
 
 .contact{
     background-color: $contact-footer-bg-color;
@@ -97,6 +121,9 @@ a:link{
 }
 
 
+
+//------------ABOUT------------
+
 .about{
     padding-top: $about--padding-top;
     padding-bottom: $about--padding-bottom;
@@ -113,10 +140,16 @@ a:link{
 
 
 
-.services__containers{
+//------------SERVICES------------
+
+.services-all{
+    display: flex;
+}
+
+.services__container{
     display: inline-block;
-    padding-right: 4%;
-    width: 20%;
+    padding-right: $services__container--padding-right;
+    width: $services__container--width;
 }
 
 .services__icon{
@@ -124,7 +157,17 @@ a:link{
     padding-bottom: $services__icon--padding-bot;
 }
 
+//------------RANGE------------
 
+.range__text-container{
+//    display: inline-block;
+    width: 59.5%;
+}
+
+.range__image-container{
+//    display: inline-block;
+    width: 39.5%;
+}
 
 .range{
     padding-top: $range--padding-top-bot;
@@ -153,6 +196,7 @@ a:link{
 //    padding-left: $range__image-container--padding-left;
 //}
 
+//------------FOOTER------------
 
 .footer{
   background-color: $contact-footer-bg-color;

@@ -1,31 +1,46 @@
 body {
   font-family: 'Montserrat'; }
 
+p {
+  line-height: 2em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+h2 {
+  font-size: 2em; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 a:link {
   color: #ffffff; }
 
 .container-bg {
   padding-left: 7%;
-  padding-right: 7%; }
+  padding-right: 7%;
+  height: 100%; }
 
 .container-sm {
   padding-left: 14%;
   padding-right: 14%; }
 
-.nav {
-  padding-top: 25px; }
-
-.nav__links-container, .nav__logo-container {
-  display: inline-block;
-  width: 49.5%; }
-
-.range__text-container {
-  display: inline-block;
+.nav__links-container, .range__text-container {
   width: 59.5%; }
 
-.range__image-container {
-  display: inline-block;
+.nav__logo-container, .welcome__text, .range__image-container {
   width: 39.5%; }
+
+.nav {
+  display: flex;
+  min-height: 50px;
+  padding-top: 15px; }
+
+.nav__links-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end; }
 
 .nav__links {
   display: inline-block;
@@ -41,13 +56,14 @@ a:link {
   color: #ffffff; }
 
 .welcome {
-  background-image: url(../../public/image/welcome.jpg);
+  background-image: url(../../public/image/welcome2.jpg);
   background-size: cover;
-  min-height: 105vh;
+  background-position: top center;
+  min-height: 107vh;
   color: #ffffff; }
 
 .welcome__text {
-  width: 50%;
+  height: 87vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -57,7 +73,7 @@ a:link {
   font-size: 4em; }
 
 .welcome__caption {
-  font-size: 1.6em; }
+  font-size: 1.5em; }
 
 .contact {
   background-color: #001560;
@@ -78,24 +94,33 @@ a:link {
   padding-right: 5px; }
 
 .about {
-  padding-top: 150px;
+  padding-top: 140px;
   padding-bottom: 100px; }
 
 .about__title {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   color: #282828; }
 
 .about__caption {
   color: #707070; }
 
-.services__containers {
+.services-all {
+  display: flex; }
+
+.services__container {
   display: inline-block;
-  padding-right: 4%;
-  width: 20%; }
+  padding-right: 5.5%;
+  width: 18%; }
 
 .services__icon {
   padding-top: 75px;
   padding-bottom: 50px; }
+
+.range__text-container {
+  width: 59.5%; }
+
+.range__image-container {
+  width: 39.5%; }
 
 .range {
   padding-top: 280px;
