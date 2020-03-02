@@ -56,6 +56,26 @@ a:link{
 
 .nav__links li{
     float: left;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1); 
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1); 
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 200ms ease-in;
+    transform: scale(1);
+}
+
+.nav__links li:hover{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.15);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.15);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.15);
+    transition: all 200ms ease-in;
+    transform: scale(1.15);
 }
 
 .nav li a{
@@ -78,7 +98,7 @@ a:link{
 
 .welcome__text{
 //    width: 50%;
-    height: 87vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -175,8 +195,9 @@ a:link{
 }
 
 .range__text-container{
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    //    display: flex;
+//    align-items: center;
 }
 
 .range__title{
@@ -192,19 +213,22 @@ a:link{
 */
 }
 
-//range__image-container{
-//    padding-left: $range__image-container--padding-left;
-//}
+.range__image-container{
+   display: inline-block;
+}
 
 //------------FOOTER------------
 
 .footer{
+  display: flex;
+  justify-content: flex-end;
+    
   background-color: $contact-footer-bg-color;
   padding-top: $contact-footer-padding;
   padding-bottom: $contact-footer-padding;
+  font-size: $footer-font-size;
 }
 
 .footer__text{
-    float: right;
     color: #6b79ab;
 }

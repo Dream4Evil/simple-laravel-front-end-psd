@@ -47,7 +47,7 @@
     <div class="container-sm services-all">
         <div class="services__container">
             <img class="services__icon" src="image/group.png" alt="">
-            <p class="services__caption">skandynawskie szkolenie Hot-Work</p>
+            <p class="services__caption">skandynawskie szkolenie <br>Hot-Work</p>
         </div>
         <div class="services__container">
             <img class="services__icon" src="image/helmet.png" alt="">
@@ -55,11 +55,11 @@
         </div>
         <div class="services__container">
             <img class="services__icon" src="image/co-founder.png" alt="">
-            <p class="services__caption">Szkolenia miękkie (dopasowane do potrzeb)</p>
+            <p class="services__caption">Szkolenia miękkie (dopasowane do&nbsp;potrzeb)</p>
         </div>
         <div class="services__container">
             <img class="services__icon" src="image/business-and-finance.png" alt="">
-            <p class="services__caption">Usługi doradcze</p>
+            <p class="services__caption">Usługi <br>doradcze</p>
         </div>
     </div>
 </div>
