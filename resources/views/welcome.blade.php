@@ -65,7 +65,7 @@
 </div>
 
 <div class="range">
-    <div class="container-sm">
+    <div class="container-sm flex">
         <div class="range__text-container">
             <h2 class="range__title">Zasięg</h2>
             <p class="range__caption">Szkolenia prowadzone na terenie całej Polski (m.in. Trójmiasto,

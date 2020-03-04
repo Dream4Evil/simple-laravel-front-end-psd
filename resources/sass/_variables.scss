@@ -23,9 +23,16 @@ $services__container--padding-right: 9.5%;
 $services__icon--padding-top: 65px;
 $services__icon--padding-bot: 50px;
 
+//----small devices----
+
+$services__container-sm--padding-right: 28%;
+$services__container-sm--width: 19%;
+
 //------------RANGE------------
 
-$range--padding-top-bot: 240px;
+$range--padding-top-bot: 220px;
+$range__text-container: 20px;
+$range__text--padding-right: 5%;
 $range__title--padding-bot: 70px;
 
 //------------FOOTER------------
