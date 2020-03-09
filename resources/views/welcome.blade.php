@@ -80,11 +80,20 @@
 </div>
 
 
+<!--
 <div class="about">
     <div class="container-sm">
         <h2 class="about__title">Działania <br>
         dla Twoich korzyści</h2>
         <p class="about__caption">Oferujemy usługi doradcze dla polskich firm, które chcą rozszerzyć swoją działalność na rynki krajów skandynawskich. Prowadzimy także szkolenia, które są niezbędne dla pracowników mających podjąć pracę lub brać udział w wykonaniu projektu w jednym z państw skandynawskich.</p>
+    </div>
+</div>
+-->
+
+<div class="about">
+    <div class="container-sm">
+        <h2 class="about__title">{{ $welcome_data->title_about }}</h2>
+        <p class="about__caption">{{ $welcome_data->description_about }}</p>
     </div>
 </div>
 

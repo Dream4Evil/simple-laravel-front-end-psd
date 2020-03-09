@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('/nav', function () {
-    return view('nav');
+Route::get('/','WelcomeController@index');
+
+Route::get('/db-connection', function () {
+    if(DB::connection()->getDatabaseName())
+       {
+        return "conected sucessfully to database ".DB::connection()->getDatabaseName();
+       } else{
+        return "can't connect to database";
+    }
 });
