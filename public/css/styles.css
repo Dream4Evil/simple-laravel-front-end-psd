@@ -32,6 +32,11 @@ a:link {
   padding-left: 12%;
   padding-right: 12%; }
 
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center; }
+
 .nav__links-container {
   width: 59.5%; }
 
@@ -53,6 +58,9 @@ a:link {
   list-style-type: none;
   text-transform: uppercase; }
 
+.nav__links li a {
+  color: white; }
+
 .nav__links li {
   float: left;
   -webkit-transition: all 150ms ease-in;
@@ -64,17 +72,17 @@ a:link {
   transition: all 150ms ease-in;
   transform: scale(1); }
 
-.nav__links li:hover {
-  z-index: 2;
-  -webkit-transition: all 150ms ease-in;
-  -webkit-transform: scale(1.15);
-  -ms-transition: all 150ms ease-in;
-  -ms-transform: scale(1.15);
-  -moz-transition: all 150ms ease-in;
-  -moz-transform: scale(1.15);
-  transition: all 150ms ease-in;
-  transform: scale(1.15); }
-
+@media (min-width: 992px) {
+  .nav__links li:hover {
+    z-index: 2;
+    -webkit-transition: all 150ms ease-in;
+    -webkit-transform: scale(1.15);
+    -ms-transition: all 150ms ease-in;
+    -ms-transform: scale(1.15);
+    -moz-transition: all 150ms ease-in;
+    -moz-transform: scale(1.15);
+    transition: all 150ms ease-in;
+    transform: scale(1.15); } }
 .nav li a {
   display: block;
   padding: 14px 16px;
@@ -87,30 +95,66 @@ a:link {
   min-height: 107vh;
   color: #ffffff; }
 
+@media (max-width: 1150px) {
+  .welcome {
+    padding-bottom: 132px; } }
+.welcome-container {
+  position: relative; }
+
 .welcome__text {
-  height: 75vh;
-  display: flex;
+  display: inline-flex;
+  min-height: 75vh;
   flex-direction: column;
   justify-content: center; }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .welcome__text {
-    width: 100%; } }
+    width: 80%; } }
 .welcome__title {
   font-weight: bold;
   font-size: 4em; }
 
+@media (max-width: 992px) {
+  .welcome__title {
+    font-size: 3em; } }
 .welcome__caption {
   font-size: 1.5em; }
+
+.welcome__link-list {
+  display: inline-flex;
+  width: 55.5%;
+  height: 100%;
+  position: absolute;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center; }
+
+@media (max-width: 768px) {
+  .welcome__link-list {
+    width: 20%; } }
+.link-list__item {
+  display: block;
+  margin-bottom: 50px; }
 
 .contact {
   background-color: #001560;
   color: #ffffff; }
 
-.contact__elements {
+.contact-container {
   display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-left: 6%;
+  padding-right: 0;
+  height: 100%; }
+
+.contact__elements {
+  display: inline-flex;
   align-items: center; }
 
+@media (max-width: 700px) {
+  .contact__elements {
+    display: block !important; } }
 .contact__el {
   display: flex;
   align-items: center;
@@ -120,6 +164,56 @@ a:link {
 
 .el__img {
   padding-right: 5px; }
+
+.contact__big-button {
+  display: inline-flex;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  height: 132px;
+  padding: 0;
+  align-self: flex-end;
+  overflow-y: hidden; }
+
+@media (max-width: 1150px) {
+  .contact__big-button {
+    bottom: 50px; } }
+@media (max-width: 700px) {
+  .contact__big-button {
+    bottom: 100px;
+    max-width: 100%;
+    height: 102px; } }
+.big-button__image {
+  background-color: #e1e1e1;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-height: 120px; }
+
+@media (max-width: 700px) {
+  .big-button__image {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 45px;
+    padding-bottom: 45px; } }
+.big-button__text {
+  display: flex;
+  align-self: center;
+  color: black;
+  background-color: #ebebeb;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+@media (max-width: 700px) {
+  .big-button__text {
+    padding-left: 50px;
+    padding-right: 50px; } }
+.nav-link {
+  padding-right: 0.67rem !important;
+  padding-left: 0.67rem !important; }
 
 .about {
   padding-top: 130px;
@@ -135,11 +229,12 @@ a:link {
 .services-all {
   display: flex; }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .services-all {
     display: block; } }
 .services__container {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   padding-right: 9.5%;
   width: 14%; }
 
@@ -149,7 +244,9 @@ a:link {
     width: 19%; } }
 .services__icon {
   padding-top: 65px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  align-self: flex-start;
+  max-width: none; }
 
 .range__text-container {
   display: inline-block;

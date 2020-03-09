@@ -1,12 +1,24 @@
 //------------NAV------------
 
 $nav-padding-top: 15px;
+$nav--color: white;
+$nav--bg-color: rgba(0, 21, 96, 0.8);
 
 //------------CONTACT------------
 
 $contact-footer-padding: 15px;
 $contact-footer-bg-color: #001560;
 $el__img--padding-right: 5px;
+
+$big-button__image:#e1e1e1;
+$big-button__text: #ebebeb;
+
+$big-button__image--padding-left-right: 70px;
+$big-button__text--padding-left-right: 100px;
+
+//---small devices
+$big-button__image--padding-left-right--sm: 35px;
+$big-button__text--padding-left-right--sm: 50px;
 
 //------------ABOUT------------
 

@@ -1,39 +1,84 @@
 @extends('layouts/default')
 @section('content')
 <div class="welcome">
-    <div class="container-bg">
-       
-        <nav class="nav">
-            <div class="nav__logo-container">
-                <img class="nav__logo" src="../../../public/image/logo.png" alt="North Consulting">
+    <div class="container-bg bg-dark">
+                
+        <nav class="nav navbar navbar-expand-lg ">
+            <div class="d-flex flex-grow-1">
+                <span class="navbar-brand w-100">
+                     <a class="navbar-brand-two mx-auto d-inline-block" href="#">
+                        <img class="nav__logo" src="../../../public/image/logo.png" alt="North Consulting">
+                    </a>
+                </span>
+
+                <div class="nav-button w-100 text-right">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
             
-            <div class="nav__links-container">
-                <ul class="nav__links">
-                    <li><a href="">oferta</a></li>
-                    <li><a href="">aktualności</a></li>
-                    <li><a href="">poradnik</a></li>
-                    <li><a href="">o nas</a></li>
-                    <li><a href="">kontakt</a></li>
+            <div class="nav__links-container collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="nav__links navbar-nav ml-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu-item">oferta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu-item">aktualności</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu-item">poradnik</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu-item">o nas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link menu-item">kontakt</a>
+                    </li>
                 </ul>
             </div>
         </nav>
         
+    </div>
+    
+    <div class="welcome-container container-bg">
+        
         <div class="welcome__text">
             <h1 class="welcome__title">Lorem ipsum dolor sit amet coś tam</h1>
+            
             <p class="welcome__caption">skandynawskie opis lorem ipsum</p>
         </div>
+        
+        <div class="welcome__link-list">
+           
+           <a class="link-list__item" href="https://www.linkedin.com/">
+            <img src="image/linkedin.png" alt="North Consulting Linkedin">
+           </a>
+            
+            <a class="link-list__item" href="https://www.facebook.com/">
+             <img src="image/facebook.png" alt="North Consulting Facebook">
+            </a>
+            
+        </div>
+        
     </div>
+    
 </div>
 
 <div class="contact">
-    <div class="container-bg">
+    <div class="contact-container">
+       <a href="" class="contact__big-button">
+            <img class="big-button__image" src="image/arrow-right.png" alt="">
+            <p class="big-button__text">SZKOLENIA HOT - WORK</p>
+        </a>
         <ul class="contact__elements">
             <li class="contact__el"><img class="el__img" src="image/phone-call-button.png" alt="">+48 609 667 148</li>
             <li class="contact__el"><img class="el__img" src="image/envelope.png" alt="">info@northconsulting.pl</li>
         </ul>
+        
     </div>
 </div>
+
 
 <div class="about">
     <div class="container-sm">

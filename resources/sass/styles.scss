@@ -31,6 +31,12 @@ a:link{
   padding-right: 12%;
 }
 
+.nav-button{
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+}
+
 .nav__links-container{
     width: 59.5%;
 }
@@ -45,7 +51,6 @@ a:link{
 .nav{
     display: flex;
     min-height: 50px;
-//    height: 20vh;
     padding-top: $nav-padding-top;
 }
 
@@ -61,7 +66,11 @@ a:link{
 .nav__links{
     display: inline-block;
     list-style-type: none;
-    text-transform: uppercase
+    text-transform: uppercase;
+}
+
+.nav__links li a{
+    color: $nav--color;
 }
 
 .nav__links li{
@@ -75,17 +84,19 @@ a:link{
     transition: all 150ms ease-in;
     transform: scale(1);
 }
-
-.nav__links li:hover{
-    z-index: 2;
-    -webkit-transition: all 150ms ease-in;
-    -webkit-transform: scale(1.15);
-    -ms-transition: all 150ms ease-in;
-    -ms-transform: scale(1.15);   
-    -moz-transition: all 150ms ease-in;
-    -moz-transform: scale(1.15);
-    transition: all 150ms ease-in;
-    transform: scale(1.15);
+    
+@media (min-width: 992px) {
+    .nav__links li:hover{
+        z-index: 2;
+        -webkit-transition: all 150ms ease-in;
+        -webkit-transform: scale(1.15);
+        -ms-transition: all 150ms ease-in;
+        -ms-transform: scale(1.15);   
+        -moz-transition: all 150ms ease-in;
+        -moz-transform: scale(1.15);
+        transition: all 150ms ease-in;
+        transform: scale(1.15);
+    }
 }
 
 .nav li a{
@@ -106,16 +117,26 @@ a:link{
     color: $text-color-main;
 }
 
+@media (max-width: 1150px) {
+    .welcome{
+        padding-bottom: 132px;
+    }
+}
+
+.welcome-container{
+    position: relative;
+}
+
 .welcome__text{
-    height: 75vh;
-    display: flex;
+    display: inline-flex;
+    min-height: 75vh;
     flex-direction: column;
     justify-content:center;
 }
 
-@media (max-width: 992px) { 
+@media (max-width: 768px) {
     .welcome__text{
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -124,11 +145,36 @@ a:link{
     font-size: $h1;
 }
 
+@media (max-width: 992px) { 
+    .welcome__title{
+        font-size: $h1--sm;
+    }
+}
+
 .welcome__caption{
     font-size: $welcome_p_font_size;
 }
 
+.welcome__link-list{
+    display: inline-flex;
+    width: 55.5%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
 
+@media (max-width: 768px) {
+    .welcome__link-list{
+        width: 20%;
+    }
+}
+
+.link-list__item{
+    display: block;
+    margin-bottom: 50px;
+}
 
 //------------CONTACT------------
 
@@ -137,13 +183,27 @@ a:link{
     color: $text-color-main;
 }
 
+.contact-container{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-left: 6%;
+    padding-right: 0;
+    height: 100%;
+}
+
 .contact__elements{
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
+@media (max-width: 700px) {
+    .contact__elements{
+        display: block !important;
+    }
+}
+
 .contact__el{
-//    display: inline-block;
     display: flex;
     align-items: center;
     padding-top: $contact-footer-padding;
@@ -155,7 +215,72 @@ a:link{
     padding-right: $el__img--padding-right;
 }
 
+.contact__big-button{
+    display: inline-flex;
+    background-color:  rgba(255, 255, 255, 0);
+    position: absolute;
+    height: 132px;
+    padding: 0;
+    align-self: flex-end;
+    overflow-y: hidden;
+}
 
+
+@media (max-width: 1150px) {
+    .contact__big-button{
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contact__big-button{
+        bottom: 100px;
+        max-width: 100%;
+        height: 102px;
+    }
+}
+
+.big-button__image{
+    background-color: $big-button__image;
+    padding-left: $big-button__image--padding-left-right;
+    padding-right: $big-button__image--padding-left-right;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    max-height: 120px;
+}
+
+@media (max-width: 700px) {
+    .big-button__image{
+        padding-left: $big-button__image--padding-left-right--sm;
+        padding-right: $big-button__image--padding-left-right--sm;
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+}
+
+.big-button__text{
+    display: flex;
+    align-self: center;
+    color: black;
+    background-color: $big-button__text;
+    padding-left: $big-button__text--padding-left-right;
+    padding-right: $big-button__text--padding-left-right;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+    .big-button__text{
+        padding-left: $big-button__text--padding-left-right--sm;
+        padding-right: $big-button__text--padding-left-right--sm;
+    }
+}
+
+.nav-link{
+    padding-right: 0.67rem !important;
+    padding-left: 0.67rem !important;
+}
 
 //------------ABOUT------------
 
@@ -181,14 +306,15 @@ a:link{
     display: flex;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .services-all{
         display: block;        
     }
 }
 
 .services__container{
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     padding-right: $services__container--padding-right;
     width: $services__container--width;
 }
@@ -203,6 +329,8 @@ a:link{
 .services__icon{
     padding-top: $services__icon--padding-top;
     padding-bottom: $services__icon--padding-bot;
+    align-self: flex-start;
+    max-width: none;
 }
 
 //------------RANGE------------
@@ -249,7 +377,6 @@ a:link{
 .footer{
   display: flex;
   justify-content: flex-end;
-    
   background-color: $contact-footer-bg-color;
   padding-top: $contact-footer-padding;
   padding-bottom: $contact-footer-padding;
